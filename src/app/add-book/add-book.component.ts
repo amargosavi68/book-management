@@ -35,6 +35,12 @@ export class AddBookComponent implements OnInit {
     console.log(this.bookForm.value);
     const book = this.bookForm.value;
     this.message = this.bookService.addBook(book);
+    this.bookForm.reset({
+      title: null,
+      author: null,
+      price: 0,
+      category: 'Science'
+    })
     setTimeout(() => {
       this.message = ""
     }, 3000);

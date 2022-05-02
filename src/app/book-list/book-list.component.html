@@ -1,1 +1,23 @@
-<p>book-list works!</p>
+<div class="container my-3">
+  <div class="d-flex align-items-center flex-column">
+    <h3>Book List</h3>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Author</th>
+          <th scope="col">Price</th>
+          <th scope="col">Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of bookList">
+          <td scope="col">{{book.title}}</td>
+          <td scope="col">{{book.author}}</td>
+          <td scope="col">{{book.price}}</td>
+          <td scope="col">{{book.category}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

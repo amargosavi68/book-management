@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-interface Book {
+export interface Book {
   title: string;
   author: string;
   price: number;
